@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet"  type="text/css" href="get.css" >
+    <link rel="stylesheet" type="text/css" href="side.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="circle.css" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>dashboard</title>
+</head>
+<body>
+    
+    <div id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="notification_icon">
+                <i class='bx bx-mobile-vibration' id="header-toggle-notification_icon " >
+                    <div class="dropdown" style="float: right; padding: 13px">
+                    <a href="#" onclick="return false;" role="button" data-toggle="dropdown" id="dropdownMenu1" data-target="#" style="float: left" aria-expanded="true">
+                        <i class="fa fa-bell-o" style="font-size: 20px; float: left; color: black">
+                        </i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-left pull-right" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation">
+                            <a href="#" class="dropdown-menu-header">Notifications</a>
+                        </li>
+                        <ul class="timeline timeline-icons timeline-sm" style="margin:10px;width:210px">
+                                                        <li>
+                                                            <p>
+                                                                Your “Volume Trendline” PDF is ready <a href="">here</a>
+                                                                <span class="timeline-icon"><i class="fa fa-file-pdf-o" style="color:red"></i></span>
+                                                                <span class="timeline-date">Dec 10, 22:00</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>
+                                                                Your “Marketplace Report” PDF is ready <a href="">here</a>
+                                                                <span class="timeline-icon"><i class="fa fa-file-pdf-o"  style="color:red"></i></span>
+                                                                <span class="timeline-date">Dec 6, 10:17</span>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>
+                                                                Your “Top Words” spreadsheet is ready <a href="">here</a>
+                                                                <span class="timeline-icon"><i class="fa fa-file-excel-o"  style="color:green"></i></span>
+                                                                <span class="timeline-date">Dec 5, 04:36</span>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                        <li role="presentation">
+                            <a href="#" class="dropdown-menu-header"></a>
+                        </li>
+                    </ul>
+                </div></i>
+            </div> 
+                       
+            
+            <div class="header__img">
+                
+                <img src="me.jpeg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="index.html" class="nav__logo">
+                        <i class='bx bx-home-heart nav__logo-icon'></i>
+                        <span class="nav__logo-name">Home</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                            <i class='bx bxs-backpack nav__icon'></i>
+                            <span class="nav__name">Tutoring</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-book-open nav__icon'></i>
+                            <span class="nav__name">My Courses</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bxs-school nav__icon'></i>
+                            <span class="nav__name">My school</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Tests</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bxs-pencil nav__icon'></i>
+                            <span class="nav__name">Notes</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Bookmarks</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">settings</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <script src="main.js"></script>
+    </div>
+<div class="side">
+    <div class="container" id="cont">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+      </div>
+      <br>
+      <main>
+        <div class="container1">
+            <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                        <svg> 
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <text x="90" y="20" id="number">Biology: <tspan>85%</tspan></text>
+                        </svg>
+                </div>
+            </div>  
+                      <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                        <svg> 
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <text x="90" y="20" id="number">chemistry: <tspan>65%</tspan></text>
+                        </svg>
+                </div>
+            </div>  
+
+                    <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                        <svg> 
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <text x="90" y="20" id="number">Physics: <tspan>25%</tspan></text>
+                        </svg>
+
+                 </div>
+            </div> 
+
+                    <div class="card">
+                    <div class="box">
+                        <div class="percent">
+                            
+                        <svg> 
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <circle cx="30px" cy="20px" r="15px"></circle>
+                            <text x="90" y="20" id="number">Maths: <tspan>75%</tspan></text>
+                               
+                        </svg>
+                        </div>
+                    
+                </div>
+            </div>  
+        </div>
+        </main>
+    </div>
+    </div>
+
+    <script src="get.js"></script>
+<div class="main">
+    <h4>Upcoming lessons</h4>
+<div class=main>
+    <div class="lesson_box">
+      <h4 id="lesson_box"> Jun,10</h4>
+        <p id="p2">Tutoring, Algebra</p>
+        <p id="lesson_box">4:00</p>
+        </span>
+    </div>
+    </div>
+    <br>
+    <br><br><br><br><br><br><br>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<body>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+['Hours','hours'],
+  [0,2],[1,8],[2,8],[3,9],[4,9],
+  [5,9],[6,10],[7,7],
+  [8,9],[9,14],[10,6]
+]);
+// Set Options
+var options = {
+  title: 'Spend Time',
+  vAxis: {title: 'Hours'},
+  legend: 'none'
+};
+// Draw
+var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+}
+</script>
+    <div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['subject', 'percentage'],
+  ['math', 8],
+  ['sci', 2],
+  ['eng', 4],
+  ['His', 2],
+  ['Com', 2],  
+  ['Art', 2],
+  ['Geo', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Skills', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</div>
+</body>
+</html>
